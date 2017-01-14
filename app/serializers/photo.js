@@ -9,6 +9,8 @@ export default ApplicationSerializer.extend({
         payload[i].regularUrl = payload[i].urls.regular;
       }
 
+
+      //http://hussfelt.net/2015/08/10/understanding-emberjs-and-jsonapi-2-0/
       // Return the payload, run the super - bubble up the chain
       return this._super(store, primaryModelClass, payload, id, requestType);
     },
